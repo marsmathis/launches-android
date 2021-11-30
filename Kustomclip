@@ -1,0 +1,33 @@
+##KUSTOMCLIP##
+{
+  "clip_version": 1,
+  "clip_cut": [],
+  "clip_modules": [
+    {
+      "internal_type": "TextModule",
+      "text_size_type": "FIXED_WIDTH",
+      "text_width": 675.0,
+      "text_family": "kfile://org.kustom.sdcard.000/fonts/3270-Medium Nerd Font Complete Mono.ttf",
+      "text_expression": "$if(gv(lautog) \u003d 1, fl(0, tc(count, br(tasker, net), \";\")-1, \"i + 1\", \"tc(split, br(tasker, agency), ;, i) \n+ tc(ell, tc(split, br(tasker, name), ;, i), 44) + tc(rpad, tc(utf, 020), tc(split, gv(len1), ;, i), tc(utf, 020)) \n+ tc(split, br(tasker, status), ;, i) \n+ if(tc(split, br(tasker, status), ;, i) \u003d Launch Successful, Launch Successful \n+ tc(utf, 020) \n+ tc(utf, 020) \n+ tc(utf, 020) \n+ tc(utf, 020), tf(tc(split, br(tasker, net), ;, i), DD \u0027d \u0027hh \u0027h \u0027mm \u0027min \u0027ss \u0027s)) \n+ gv(space) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) +tc(utf, 020) + tc(utf, 020) +tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + Window: + tc(split, br(tasker, window), ;, i)\", \"\n\n\"))$$if(gv(lautog) \u003d 0, fl(0, tc(count, br(tasker, net), \";\")-1, \"i + 1\", \"tc(split, br(tasker, agency), ;, i) + tc(ell, tc(split, br(tasker, name), ;, i), 44) + tc(rpad, tc(utf, 020), tc(split, gv(len1), ;, i), tc(utf, 020)) + tc(split, br(tasker, status), ;, i) + df(yyyy-MM-dd hh:mm:ss, tc(split, br(tasker, net), ;, i)) + gv(space)+ tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) +tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + tc(utf, 020) + Window: + tc(split, br(tasker, window), ;, i)\", \"\n\n\"))$",
+      "internal_events": [
+        {
+          "type": "SINGLE_TAP",
+          "action": "SWITCH_GLOBAL",
+          "switch": "lautog"
+        }
+      ],
+      "text_size": 18.0,
+      "internal_toggles": {
+        "paint_mode": 10,
+        "text_family": 100
+      },
+      "internal_formulas": {
+        "paint_mode": "$if(gv(opac) \u003d 1, NORMAL, CLEAR)$"
+      },
+      "internal_globals": {
+        "text_family": "monofont"
+      }
+    }
+  ]
+}
+##KUSTOMCLIP##
